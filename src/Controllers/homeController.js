@@ -1,7 +1,7 @@
 
 paginaInicial = function(req,res) {
+res.render(' index');
 
-res.send("Você esta na raiz do site!");
 };
 
 module.exports = {paginaInicial:paginaInicial};
