@@ -1,14 +1,14 @@
 const express = require('express');
-const route = express.Router();
-const home = require("../Controllers/homeController");
+const router = express.Router();
+const homeController = require("../Controllers/homeController");
 
 //rotas da home
-route.get('/', home.paginaInicial);
+router.get('/', homeController.paginaInicial);
 
 
 
 
-module.exports = route;
+module.exports = router;
 
   
   

@@ -1,7 +1,6 @@
-
-paginaInicial = function(req,res) {
-res.render(' index');
+exports.paginaInicial = (req,res) => {
+res.render('index');
 
 };
 
-module.exports = {paginaInicial:paginaInicial};
+//module.exports = {paginaInicial:paginaInicial};
