@@ -1,7 +1,10 @@
-exports.paginaInicial = (req,res, next) => {
+exports.paginaInicial = (req,res) => {
 res.render('index');
-next();
+};
 
+exports.trataPost  = (req,res) =>{
+  res.send(req.body);
+  return;
 };
 
 //module.exports = {paginaInicial:paginaInicial};
