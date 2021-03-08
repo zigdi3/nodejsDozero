@@ -1,23 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-</head>
-<body>
-  <section class="container">
-      <h3>aff<h3>
-      <form action="/" method="post">
-      <label>cliente</label>
-        <input type="text" name="cliente">
-        <button>Submit</button></form>
-           </form>
-  </section>
-  
-  
-<script src="./assets/js/bundle.js"></script>
-</body>
+<%- include('includes/head'); %>
+<%- include('includes/nav'); %>
+<div class="container ">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8"></div>
+    <h1 class="text-center my-3">Agenda</h1>
+    <p class="text-center lead">Veja seus contatos abaixo:</p>
 
-</html>
+    <div class="row">
+      <div class="col my-3">
+        <div class="alert alert-danger">Erro!</div>
+      </div>
+    </div>
+
+    <div class="responsive-table"></div>
+
+    <table class="table my-3">
+
+      <tr>
+        <td>Luiza</td>
+        <td>Marcos</td>
+        <td>031987136241</td>
+        <td>riachocachoeira@hotmail.com</td>
+      </tr>
+
+    </table>
+      <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<%- include('includes/footer'); %>

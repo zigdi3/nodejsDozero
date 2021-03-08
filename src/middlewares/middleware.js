@@ -1,5 +1,4 @@
 exports.middlewareGlobal = (req, res, next) => {
-  res.locals.vr = 'Agora vou exibir a local';
   next();
 };
 
